@@ -1,7 +1,14 @@
-Starter-with-auth
+## Starter-with-auth
+
 Next.js/Node.js starter with Login system and roles.
+
+Theme - Light and dark
+
 Next.js -v 14
+
 Node.js -v 21
+
+Bootstrap
 
 **Example for config.js file 
 **
