@@ -1,4 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Starter-with-auth
+Next.js/Node.js starter with Login system and roles.
+
+**Example for config.js file 
+**
+```bash
+const DB_URI = process.env.NODE_ENV === "production"
+  ? "mongodb+srv://STRING...."
+  : "mongodb://localhost:27017/DB_NAME....";
+
+const API =
+process.env.NODE_ENV === "production"
+  ? "https://xxx.vercel.app/api"
+  : "http://localhost:3000/api";
+
+const NEXTAUTH_SECRET = "ADD_SECRET...";
+const NEXTAUTH_URL =
+process.env.NODE_ENV === "production"
+  ? "https://xxx.vercel.app"
+  : "http://localhost:3000";
+
+const GOOGLE_CLIENT_ID="ADD_ID...";
+const GOOGLE_CLIENT_SECRET="ADD_SECRET...";
+
+module.exports = {
+DB_URI,
+API,
+NEXTAUTH_SECRET,
+NEXTAUTH_URL,
+GOOGLE_CLIENT_ID,
+GOOGLE_CLIENT_SECRET,
+};
+
+```
 
 ## Getting Started
 
@@ -16,9 +49,6 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
 
