@@ -1,5 +1,7 @@
 Starter-with-auth
 Next.js/Node.js starter with Login system and roles.
+Next.js -v 14
+Node.js -v 21
 
 **Example for config.js file 
 **
